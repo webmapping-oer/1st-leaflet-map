@@ -1,0 +1,41 @@
+/* 1st Leaflet Map */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1');
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+a {
+    color: black;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    align-items: baseline;
+}
+
+header h2 {
+    text-align: center;
+    margin: 0;
+}
+
+header nav {
+    font-size: 0.9em;
+    text-align: right;
+    font-weight: bold;
+}
+
+article {
+    margin: 0.5em 0;
+}
+
+footer {
+    font-size: 0.9em;
+}
