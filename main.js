@@ -18,3 +18,8 @@ let marker = L.marker([48.208493, 16.373118]).addTo(map);
 marker.bindPopup(`
     <h4>Stephansdom</h4>
 `).openPopup();
+
+// Maßstab
+L.control.scale({
+    imperial: false
+}).addTo(map);
