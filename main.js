@@ -6,9 +6,14 @@ let map = L.map("map");
 // auf den Stephansdom blicken
 map.setView([48.208493, 16.373118], 12);
 
-// Hintergrundkarte der OpenStreetMap hinzufügen
+// Hintergrundkarten der basemap.at und OpenStreetMap hinzufügen
 L.control.layers({
-    "OpenStreetMap": L.tileLayer.provider("OpenStreetMap.Mapnik").addTo(map)
+    "BasemapAT Standard": L.tileLayer.provider("BasemapAT.basemap").addTo(map),
+    "BasemapAT High-DPI": L.tileLayer.provider("BasemapAT.highdpi"),
+    "BasemapAT Grau": L.tileLayer.provider("BasemapAT.grau"),
+    "BasemapAT Gelände": L.tileLayer.provider("BasemapAT.terrain"),
+    "BasemapAT Oberfläche": L.tileLayer.provider("BasemapAT.surface"),
+    "OpenStreetMap": L.tileLayer.provider("OpenStreetMap.Mapnik"),
 }).addTo(map);
 
 // Marker für den Stephansdom hinzufügen
