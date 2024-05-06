@@ -9,7 +9,7 @@ map.setView([48.208493, 16.373118], 12);
 // Hintergrundkarte der OpenStreetMap hinzufügen
 L.control.layers({
     "OpenStreetMap": L.tileLayer.provider("OpenStreetMap.Mapnik").addTo(map)
-})
+}).addTo(map);
 
 // Marker für den Stephansdom hinzufügen
 let marker = L.marker([48.208493, 16.373118]).addTo(map);
