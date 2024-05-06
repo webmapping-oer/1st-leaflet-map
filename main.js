@@ -13,6 +13,10 @@ L.control.layers({
     "BasemapAT Grau": L.tileLayer.provider("BasemapAT.grau"),
     "BasemapAT Gelände": L.tileLayer.provider("BasemapAT.terrain"),
     "BasemapAT Oberfläche": L.tileLayer.provider("BasemapAT.surface"),
+    "BasemapAT Orthofoto (beschriftet)": L.layerGroup([
+        L.tileLayer.provider("BasemapAT.orthofoto"),
+        L.tileLayer.provider("BasemapAT.overlay"),
+    ]),
     "OpenStreetMap": L.tileLayer.provider("OpenStreetMap.Mapnik"),
 }).addTo(map);
 
